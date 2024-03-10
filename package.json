@@ -10,9 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@astrojs/check": "^0.5.4",
     "astro": "^4.4.0",
+    "emailjs-com": "^3.2.0",
     "jsx-runtime": "^1.2.0",
+    "save": "^2.9.0",
     "typescript": "^5.3.3"
+  },
+  "proxy": "http://localhost:8000/",
+  "devDependencies": {
+    "@types/node": "^20.11.25"
   }
 }

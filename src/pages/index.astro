@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+
+
 ---
 
 <Layout title="This Project is In Development by Jon-Factor">
@@ -10,8 +12,8 @@ import Layout from '../layouts/Layout.astro';
 		<p class="instructions">
 			[in dev project name] is in <strong>Development</strong> and is not yet avalible. <br/> To see how far along we are click the button below to join our email list!
 		</p>
-		<form class="join" method="post" action="submit" onsubmit="submit()">
-			<input class="input" type="text">
+		<form class="join" method="get" action="waiting/submit" onsubmit="submit">
+			<input class="input" type="text" name="email">
 			<input class="submit text-gradient" type="submit" value="Get Updates">
 		</form>
 	</main>
