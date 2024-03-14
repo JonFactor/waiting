@@ -1,12 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-<<<<<<< HEAD
-//merging
-=======
+import Card from '../components/Card.astro';
 
-
-
->>>>>>> 666153ed827b5b00ac1039c4f177df104f719548
 ---
 
 <Layout title="This Project is In Development by Jon-Factor">
@@ -16,11 +11,12 @@ import Layout from '../layouts/Layout.astro';
 		<p class="instructions">
 			[in dev project name] is in <strong>Development</strong> and is not yet avalible. <br/> To see how far along we are click the button below to join our email list!
 		</p>
-		<form class="join" method="get" action="waiting/submit" onsubmit="submit">
-			<input class="input" type="text" name="email">
-			<input class="submit text-gradient" type="submit" value="Get Updates">
-		</form>
-	</main>
+		<div class="join">
+			<a href="https://forms.gle/sBXFEpaHEe71wBEV8">
+				<h2>Join Email List Now!</h2>
+			</a>			
+		</div>
+
 </Layout>
 
 <style>
@@ -34,21 +30,12 @@ import Layout from '../layouts/Layout.astro';
 		line-height: 1.6;
 	}
 	.join {
-		background:white;
-		padding-left: 20px;
-		display:flex;
-		border-radius: 20px;
-		overflow: hidden;
-	}
-	.input {
-		height: 50px;
-		font-size: 25px;
-		width: 75%;
-	}
-	.submit {
-		width: 35%
-	
-
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background-color: rgba(var(--accent-dark));
+		border-radius: 30px;
 	}
 	.astro-a {
 		position: absolute;
@@ -72,11 +59,10 @@ import Layout from '../layouts/Layout.astro';
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-		font-size: x-large;
-		font-weight: 800;
 	}
 	h2 {
 		color: white;
+
 	}
 	.instructions {
 		margin-bottom: 2rem;
@@ -84,6 +70,9 @@ import Layout from '../layouts/Layout.astro';
 		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
 		border-radius: 8px;
+		text-align: center;
+		align-self: center;
+		justify-self: center;
 	}
 	.instructions code {
 		font-size: 0.8em;
